@@ -1,0 +1,7 @@
+# update configuration and rename this file: config.yml
+app:
+  host: 'localhost'
+  database: 'foo'
+  username: 'bar'
+  password: 'changeme'
+  port: 5432
