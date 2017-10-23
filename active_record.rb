@@ -1,5 +1,5 @@
 # Database
-class WorkoutData < ActiveRecord::Base
+class Data < ActiveRecord::Base
   self.abstract_class = true
   establish_connection(
     adapter:    'postgresql',
@@ -10,4 +10,8 @@ class WorkoutData < ActiveRecord::Base
     password:   $config['app']['password'],
     port:       $config['app']['port']
   )
+end
+
+class FooBar < Data
+    self.table_name = "foo_bar"
 end
